@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CN5</string>
+    <string name="selected_item">Selected item:</string>
+    <string-array name="Kategori">
+        <item>Nasional</item>
+        <item>Internasional</item>
+        <item>Ekonomi</item>
+        <item>Olahraga</item>
+        <item>Hiburan</item>
+        <item>Teknologi</item>
+    </string-array>
+    <string name="trending">TRENDING</string>
+    <string name="rahasia_dib">Rahasia Dibalik Sebuah Desain CyberTruck Milik Tesla</string>
+    <string name="baca_lebih">BACA LEBIH</string>
+    <string name="rabu_5_febr">RABU, 5 FEBRUARI 2020</string>
+    <string name="nw_news">NW NEWS</string>
+    <string name="pulang_dari">Pulang dari China, Mahasiswi Diisolasi</string>
+    <string name="feb_12_30">4 FEB, 12.30</string>
+    <string name="berita_popu">BERITA POPULER</string>
+    <string name="semua">SEMUA</string>
+    <string name="nasional">NASIONAL</string>
+    <string name="ekonomi">EKONOMI</string>
+    <string name="olahraga">OLAHRAGA</string>
+    <string name="teknologi">TEKNO</string>
+</resources>

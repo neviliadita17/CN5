@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10sp"
+    android:background="@drawable/back_biru"
+    tools:context=".CreateAccount">
+
+    <View
+        android:id="@+id/ellipse_1"
+        android:layout_width="293dp"
+        android:layout_height="118dp"
+        android:background="@drawable/log"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="90dp"
+        android:layout_height="22dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginTop="80dp"
+        android:text="USERNAME"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="top"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETNama"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:inputType="textPersonName"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="90dp"
+        android:layout_height="22dp"
+        android:layout_marginRight="104dp"
+        android:text="EMAIL"
+        android:layout_marginTop="25dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="top"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETEmail"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="90dp"
+        android:layout_height="22dp"
+        android:layout_marginRight="104dp"
+        android:text="PASSWORD"
+        android:layout_marginTop="25dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="top"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETPass"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/BCreateAccount"
+        android:background="@drawable/button_reg"
+        android:text="Create Account"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

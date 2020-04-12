@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    tools:context=".DetailAccount"
+    android:gravity="center"
+    android:background="@drawable/back_biru">
+
+    <View
+        android:id="@+id/ellipse_1"
+        android:layout_width="293dp"
+        android:layout_height="118dp"
+        android:background="@drawable/log"
+        android:layout_centerHorizontal="true"/>
+
+    <TableLayout
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/ellipse_1"
+        android:id="@+id/tl_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/tv_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Email : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Verified : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/tv_email_verifiied"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_width="175dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/BLogout"
+        android:layout_below="@id/tl_data"
+        android:text="LOGOUT"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@drawable/button_reg"
+        android:onClick="Logout"/>
+</RelativeLayout>
