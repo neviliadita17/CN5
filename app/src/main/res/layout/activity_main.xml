@@ -78,14 +78,14 @@
         android:textStyle="bold"
         android:text="Login"/>
 
-    <Button
-        android:layout_marginTop="30dp"
-        android:layout_width="175dp"
-        android:layout_height="56dp"
-        android:id="@+id/BCreateAccount"
-        android:background="@drawable/button_reg"
-        android:text="Create Account"
-        android:textSize="16sp"
-        android:textStyle="bold"/>
+<!--    <Button-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_width="175dp"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:id="@+id/BCreateAccount"-->
+<!--        android:background="@drawable/button_reg"-->
+<!--        android:text="Create Account"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"/>-->
 
 </LinearLayout>

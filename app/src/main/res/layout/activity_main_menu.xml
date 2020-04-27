@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu"
+    android:background="@drawable/back_biru"
+    android:paddingTop="30dp">
+
+    <ImageButton
+        android:id="@+id/BLogout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="0px"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/logout"
+        android:onClick="Logout"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/BLogout"
+        android:layout_marginTop="50dp">
+
+        <View
+            android:id="@+id/ellipse_1"
+            android:layout_width="293dp"
+            android:layout_height="118dp"
+            android:background="@drawable/log"/>
+
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:id="@+id/BNews"
+            android:text="Berita"
+            android:background="@drawable/button_log"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/BAccount"
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/tl_data"
+            android:background="@drawable/button_log"
+            android:text="Account"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

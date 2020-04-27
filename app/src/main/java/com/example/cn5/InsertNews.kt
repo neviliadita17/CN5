@@ -1,20 +1,23 @@
 package com.example.cn5
 
+import android.app.Activity
 import android.app.ProgressDialog
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.view.View
 import android.widget.*
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_insert_news.*
 
-class InsertNews : AppCompatActivity() {
-
-
-
+class InsertNews : AppCompatActivity(){
     lateinit var ref : DatabaseReference
+    private var imgPath: Uri? = null
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,19 +47,23 @@ class InsertNews : AppCompatActivity() {
                 }
             }
         }
-
         ref = FirebaseDatabase.getInstance().getReference("News")
         BInsert.setOnClickListener {
             savedata()
             val intent = Intent (this, MainNews::class.java)
             startActivity(intent)
         }
+
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == Activity.RESULT_OK) {
+            imgPath = data?.data
         }
+    }
 
     private fun savedata() {
-
-
-
         val judul = ETJudul.text.toString()
         val isi = ETIsi.text.toString()
         val link = ETLink.text.toString()
@@ -73,4 +80,6 @@ class InsertNews : AppCompatActivity() {
 
         }
     }
+
+
 }

@@ -17,8 +17,8 @@ class Adapter(val mCtx: Context, val layoutResId: Int, val list: List<News> )
         val layoutInflater: LayoutInflater = LayoutInflater.from(mCtx)
         val view: View = layoutInflater.inflate(layoutResId,null)
 
-        val textUpdate = view.findViewById<TextView>(R.id.TextUpdate)
-        val textDelete = view.findViewById<TextView>(R.id.TextDelete)
+        val textUpdate = view.findViewById<Button>(R.id.BtnUpdate)
+        val textDelete = view.findViewById<Button>(R.id.BtnDelete)
 
         val textJudul = view.findViewById<TextView>(R.id.textJudul)
         val textIsi = view.findViewById<TextView>(R.id. textIsi)
@@ -35,9 +35,7 @@ class Adapter(val mCtx: Context, val layoutResId: Int, val list: List<News> )
         textDelete.setOnClickListener {
             Deleteinfo(news)
         }
-
         return view
-
     }
 
     private fun Deleteinfo(news: News) {

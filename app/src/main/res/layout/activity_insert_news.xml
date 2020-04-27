@@ -10,11 +10,12 @@
     tools:context=".InsertNews"
     android:background="@drawable/back_biru">
 
-    <View
-        android:id="@+id/ellipse_1"
-        android:layout_width="293dp"
-        android:layout_height="118dp"
-        android:background="@drawable/log"/>
+
+<!--    <View-->
+<!--        android:id="@+id/ellipse_1"-->
+<!--        android:layout_width="293dp"-->
+<!--        android:layout_height="118dp"-->
+<!--        android:background="@drawable/log"/>-->
 
     <TextView
         android:id="@+id/judul"

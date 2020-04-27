@@ -20,17 +20,7 @@
             android:layout_height="56dp"
             android:id="@+id/BTambah"
             android:text="Tambah"
-            android:background="@drawable/button_log"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-        <Button
-            android:id="@+id/BLogout"
-            android:layout_width="175dp"
-            android:layout_height="56dp"
-            android:layout_below="@id/tl_data"
             android:background="@drawable/button_reg"
-            android:onClick="Logout"
-            android:text="Logout"
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>

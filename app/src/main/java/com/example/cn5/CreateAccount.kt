@@ -91,7 +91,7 @@ class CreateAccount : AppCompatActivity() {
 
     private fun updateUserInfoAndUI() {
         //start next activity
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, MainMenu::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
     }

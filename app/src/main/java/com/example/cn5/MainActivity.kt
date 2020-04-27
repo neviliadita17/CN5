@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         etEmail = findViewById<View>(R.id.ETEmail) as EditText
         etPassword = findViewById<View>(R.id.ETPass) as EditText
         btnLogin = findViewById<View>(R.id.BLogin) as Button
-        btnCreateAccount = findViewById<View>(R.id.BCreateAccount) as Button
+//        btnCreateAccount = findViewById<View>(R.id.BCreateAccount) as Button
         mProgressBar = ProgressDialog(this)
         mAuth = FirebaseAuth.getInstance()
         tvForgotPassword!!
@@ -49,9 +49,9 @@ class MainActivity : AppCompatActivity() {
                 Intent(this,
                     ForgotPassword::class.java)
             ) }
-        btnCreateAccount!!
-            .setOnClickListener { startActivity(Intent(this,
-                CreateAccount::class.java)) }
+//        btnCreateAccount!!
+//            .setOnClickListener { startActivity(Intent(this,
+//                CreateAccount::class.java)) }
         btnLogin!!.setOnClickListener { loginUser() }
     }
 
@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateUI() {
-        val intent = Intent(this, MainNews::class.java)
+        val intent = Intent(this, MainMenu::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
     }
