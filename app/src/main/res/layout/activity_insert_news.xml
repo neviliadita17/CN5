@@ -11,11 +11,11 @@
     android:background="@drawable/back_biru">
 
 
-<!--    <View-->
-<!--        android:id="@+id/ellipse_1"-->
-<!--        android:layout_width="293dp"-->
-<!--        android:layout_height="118dp"-->
-<!--        android:background="@drawable/log"/>-->
+    <!--    <View-->
+    <!--        android:id="@+id/ellipse_1"-->
+    <!--        android:layout_width="293dp"-->
+    <!--        android:layout_height="118dp"-->
+    <!--        android:background="@drawable/log"/>-->
 
     <TextView
         android:id="@+id/judul"
@@ -79,6 +79,27 @@
         android:textColor="@android:color/white"
         android:backgroundTint="@android:color/white"
         android:inputType="text"/>
+        />
+
+    <TextView
+        android:id="@+id/image_link"
+        android:layout_width="140dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="80dp"
+        android:gravity="top"
+        android:text="@string/linkberita"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETImageLink"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:inputType="text"/>
 
     <TextView
         android:id="@+id/kategori"
@@ -90,15 +111,18 @@
         android:textColor="@android:color/white"
         android:textSize="16sp"
         android:gravity="top"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold"/>
 
     <Spinner
         android:id="@+id/SPKategori"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/white"
         />
+
+
+
 
     <Button
         android:layout_marginTop="50dp"
@@ -111,4 +135,3 @@
         android:text="Post"/>
 
 </LinearLayout>
-

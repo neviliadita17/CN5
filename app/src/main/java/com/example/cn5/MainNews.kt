@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ListView
+import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_main_news.*
@@ -22,6 +23,9 @@ class MainNews : AppCompatActivity() {
         ref = FirebaseDatabase.getInstance().getReference("News")
         list = mutableListOf()
         listView = findViewById(R.id.listView)
+
+
+
 
         ref.addValueEventListener(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {

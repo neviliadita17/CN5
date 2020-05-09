@@ -8,7 +8,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import com.bumptech.glide.Glide
 import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.news.*
 
 class Adapter(val mCtx: Context, val layoutResId: Int, val list: List<News> )
     : ArrayAdapter<News>(mCtx,layoutResId,list){
@@ -21,12 +23,20 @@ class Adapter(val mCtx: Context, val layoutResId: Int, val list: List<News> )
         val textDelete = view.findViewById<Button>(R.id.BtnDelete)
 
         val textJudul = view.findViewById<TextView>(R.id.textJudul)
-        val textIsi = view.findViewById<TextView>(R.id. textIsi)
-
+        val textLink = view.findViewById<TextView>(R.id.textLink)
+        val image = view.findViewById<ImageView>(R.id.img_item_photo)
         val news = list[position]
 
         textJudul.text = news.judul
-        textIsi.text = news.isi
+        textLink.text = news.link
+        var url = news.linkimage
+
+        //dependency glide dipanggil dan diterapkan ke image1
+            Glide.with(context)
+            .load(url)
+            .placeholder(R.color.colorPrimary)
+            .error(R.color.colorPrimary)
+                . into(image)
 
 
         textUpdate.setOnClickListener {
@@ -64,11 +74,13 @@ class Adapter(val mCtx: Context, val layoutResId: Int, val list: List<News> )
         val textJudul = view.findViewById<EditText>(R.id.inputJudul)
         val textIsi = view.findViewById<EditText>(R.id.inputIsi)
         val textLink = view.findViewById<EditText>(R.id.inputLink)
+        val textLinkImage = view.findViewById<EditText>(R.id.inputLinkImage)
         val textKategori = view.findViewById<EditText>(R.id.inputKategori)
 
         textJudul.setText(news.judul)
         textIsi.setText(news.isi)
         textLink.setText(news.link)
+        textLinkImage.setText(news.linkimage)
         textKategori.setText(news.kategori)
 
         builder.setView(view)
@@ -77,6 +89,7 @@ class Adapter(val mCtx: Context, val layoutResId: Int, val list: List<News> )
             val judul = textJudul.text.toString().trim()
             val isi = textIsi.text.toString().trim()
             val link = textLink.text.toString().trim()
+            val linkimage = textLinkImage.text.toString().trim()
             val kategori = textKategori.text.toString().trim()
             if (judul.isEmpty()){
                 textJudul.error = "Masukan Judul"
@@ -89,16 +102,21 @@ class Adapter(val mCtx: Context, val layoutResId: Int, val list: List<News> )
                 return@setPositiveButton
             }
             if (link.isEmpty()){
-                textLink.error = "Masukan Isi"
+                textLink.error = "Masukan Link"
                 textLink.requestFocus()
                 return@setPositiveButton
             }
+            if (link.isEmpty()){
+                textLinkImage.error = "Masukan Link Image"
+                textLinkImage.requestFocus()
+                return@setPositiveButton
+            }
             if (kategori.isEmpty()){
-                textKategori.error = "Masukan Isi"
+                textKategori.error = "Masukan Kategori"
                 textKategori.requestFocus()
                 return@setPositiveButton
             }
-            val news = News(news.id,judul,isi, link, kategori)
+            val news = News(news.id,judul,isi, link, linkimage, kategori)
 
             dbNews.child(news.id).setValue(news).addOnCompleteListener {
                 Toast.makeText(mCtx,"Updated",Toast.LENGTH_SHORT).show()

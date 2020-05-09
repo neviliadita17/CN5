@@ -67,10 +67,11 @@ class InsertNews : AppCompatActivity(){
         val judul = ETJudul.text.toString()
         val isi = ETIsi.text.toString()
         val link = ETLink.text.toString()
+        val linkimage = ETImageLink.text.toString()
         val kategori = SPKategori.getSelectedItem().toString()
 
         val newsId = ref.push().key.toString()
-        val news = News(newsId,judul,isi,link,kategori)
+        val news = News(newsId,judul,isi,link, linkimage,kategori)
 
         ref.child(newsId).setValue(news).addOnCompleteListener {
             Toast.makeText(this, "Successs",Toast.LENGTH_SHORT).show()
