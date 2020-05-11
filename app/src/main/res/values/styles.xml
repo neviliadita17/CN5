@@ -151,4 +151,15 @@
         </item>
     </style>
 
+    <style name="ButtonGeneral" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textColor">@color/colorFive</item>
+        <item name="android:background">@color/colorOne</item>
+        <item name="android:fontFamily">century gothic</item>
+    </style>
+
 </resources>

@@ -23,4 +23,8 @@
     <string name="olahraga">OLAHRAGA</string>
     <string name="teknologi">TEKNO</string>
     <string name="linkberita">LINK GAMBAR</string>
+
+
+    <string name="judul">Judul</string>
+
 </resources>

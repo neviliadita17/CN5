@@ -4,10 +4,12 @@ import android.app.AlertDialog
 import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.core.content.ContextCompat.startActivity
 import com.bumptech.glide.Glide
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.news.*
@@ -39,6 +41,7 @@ class Adapter(val mCtx: Context, val layoutResId: Int, val list: List<News> )
                 . into(image)
 
 
+
         textUpdate.setOnClickListener {
             showUpdateDialog(news)
         }
@@ -47,6 +50,7 @@ class Adapter(val mCtx: Context, val layoutResId: Int, val list: List<News> )
         }
         return view
     }
+
 
     private fun Deleteinfo(news: News) {
         val progressDialog = ProgressDialog(context,
@@ -65,10 +69,6 @@ class Adapter(val mCtx: Context, val layoutResId: Int, val list: List<News> )
         val builder = AlertDialog.Builder(mCtx)
         builder.setTitle("Update")
         val inflater = LayoutInflater.from(mCtx)
-
-
-
-
 
         val view = inflater.inflate(R.layout.update, null)
         val textJudul = view.findViewById<EditText>(R.id.inputJudul)

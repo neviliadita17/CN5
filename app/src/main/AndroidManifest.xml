@@ -12,22 +12,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainMenu"></activity>
-        <activity android:name=".NewsInsert" />
-        <activity android:name=".NewsDetail" />
-        <activity android:name=".MainActivity" /> <!-- <activity android:name=".Show" /> -->
-        <activity android:name=".InsertNews" />
-        <activity android:name=".MainNews" /> <!-- <activity android:name=".MainBerita" /> -->
-        <activity android:name=".CreateAccount" />
-        <activity android:name=".DetailAccount" />
-        <activity android:name=".ForgotPassword" />
-        <activity android:name=".LandingPage">
+        <activity android:name=".LandingPage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".NewsDetail" />
+        <activity android:name=".MainMenu" />
+        <activity android:name=".MainActivity" /> <!-- <activity android:name=".Show" /> -->
+        <activity android:name=".InsertNews" />
+        <activity android:name=".MainNews" /> <!-- <activity android:name=".MainBerita" /> -->
+        <activity android:name=".CreateAccount" />
+        <activity android:name=".DetailAccount" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".NewsList"/>
     </application>
 
 </manifest>
