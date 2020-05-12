@@ -152,6 +152,31 @@
             android:background="@drawable/bek"
             />
 
+            <TextView
+                android:id="@+id/pulang_dari1"
+                android:layout_width="124dp"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="405dp"
+                android:layout_marginTop="435dp"
+                android:gravity="top"
+                android:text="Tony Ferguson, Binatang Buas"
+                android:textAppearance="@style/pulang_dari" />
+
+            <TextView
+                android:id="@+id/feb_12_30"
+                android:layout_width="138dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="406dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="478dp"
+                android:text="@string/feb_12_30"
+                android:textAppearance="@style/feb_12_30"
+                android:gravity="top"
+                />
+
 
 
         <!-- Rectangle 5 -->
@@ -243,7 +268,35 @@
             android:background="@drawable/bek"
             />
 
-    </RelativeLayout>
+            <!-- Pulang dari China, Mahasiswi Diisolasi -->
+            <TextView
+                android:id="@+id/pulang_dari"
+                android:layout_width="129dp"
+                android:layout_height="39dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="405dp"
+                android:layout_marginTop="575dp"
+                android:gravity="top"
+                android:text="LAPAN: Asteroid Benda Langit"
+                android:textAppearance="@style/pulang_dari" />
+
+            <!-- 4 FEB, 12.30 -->
+            <TextView
+                android:id="@+id/feb_12_30"
+                android:layout_width="138dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="406dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="624dp"
+                android:text="@string/feb_12_30"
+                android:textAppearance="@style/feb_12_30"
+                android:gravity="top"
+                />
+
+
+        </RelativeLayout>
     </HorizontalScrollView>
 
 
@@ -449,24 +502,23 @@
         <!-- Group 8 -->
         <View
             android:id="@+id/group_8"
-            android:layout_width="411dp"
-            android:layout_height="140dp"
+            android:layout_width="412dp"
+            android:layout_height="57dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="742dp"
-            android:background="#00000000"
-            />
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="775dp"
+            android:background="#00000000" />
 
         <!-- Rectangle 3 -->
         <View
             android:id="@+id/rectangle_3"
-            android:layout_width="411dp"
-            android:layout_height="135dp"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="760dp"
-            android:background="@drawable/menubar"
-            />
+            android:layout_marginTop="775dp"
+            android:background="@drawable/menubar" />
 
         <!-- home-run -->
         <View
@@ -476,7 +528,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="43dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="775dp"
+            android:layout_marginTop="785dp"
             android:background="@drawable/home_run"
             />
 
@@ -488,7 +540,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="347dp"
-            android:layout_marginTop="775dp"
+            android:layout_marginTop="785dp"
             android:background="@drawable/account" />
 
         <!-- search -->
@@ -499,7 +551,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="139dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="776dp"
+            android:layout_marginTop="785dp"
             android:background="@drawable/search"
             />
 
@@ -511,7 +563,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="242dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="773dp"
+            android:layout_marginTop="785dp"
             android:background="@drawable/star"
             />
 
