@@ -96,7 +96,7 @@
             android:layout_marginLeft="136dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="435dp"
-            android:text="@string/pulang_dari"
+            android:text="Lisa Blackpink dapat ancaman pembunuhan"
             android:textAppearance="@style/pulang_dari"
             android:gravity="top"
             />
@@ -182,12 +182,12 @@
         <TextView
             android:id="@+id/pulang_dari"
             android:layout_width="138dp"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="136dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="580dp"
-            android:text="@string/pulang_dari"
+            android:layout_marginTop="575dp"
+            android:text="KPPU Soroti Persaingan Tak Sehat di Program Kartu Prakerja"
             android:textAppearance="@style/pulang_dari"
             android:gravity="top"
             />
@@ -341,6 +341,7 @@
             android:text="@string/baca_lebih"
             android:textColor="@android:color/white"
             android:textStyle="bold"
+            android:onClick="bacalebih"
             />
 
         <!-- Group 1 -->
