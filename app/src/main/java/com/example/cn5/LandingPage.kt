@@ -13,6 +13,10 @@ class LandingPage : AppCompatActivity() {
 //        account = findViewById(android.R.id.account)
         account.setOnClickListener{
             startActivity(Intent(this, MainActivity::class.java))}
+        rectangle_blb.setOnClickListener{
+            val intent = Intent (this, NewsList::class.java)
+            startActivity(intent)
+        }
     }
 
 }
