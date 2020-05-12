@@ -5,44 +5,62 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="9dp"
+    android:padding="16dp"
     >
 
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_item_photo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         tools:src="@color/colorAccent"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp"
         android:layout_marginLeft="18dp"
         />
-
     <LinearLayout
         android:id="@+id/mains"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15px"
+        android:layout_marginTop="16dp"
         android:layout_toEndOf="@id/img_item_photo"
         android:layout_toRightOf="@id/img_item_photo"
         android:orientation="vertical"
+        android:layout_marginBottom="15px"
         tools:ignore="RtlHardcoded">
 
         <TextView
-            android:id="@+id/textJudul"
+            android:text="TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:id="@+id/textJudul"
+            android:textSize="20sp"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginRight="40dp"
             android:layout_marginBottom="0dp"
-            android:text="TextView"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:textColor="@android:color/white"/>
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_below="@id/mains"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
 
+        >
 
-
+        <Button
+            android:id="@+id/BtnRead"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="95dp"
+            android:background="@drawable/button_reg"
+            android:text="Read"
+            android:textColor="@color/textColor1"
+            />
+    </LinearLayout>
 
 </RelativeLayout>
