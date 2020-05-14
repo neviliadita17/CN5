@@ -11,7 +11,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="trending">
+    <style name="welcome">
         <item name="android:textSize">
             12sp
         </item>
@@ -21,9 +21,9 @@
         </item>
     </style>
 
-    <style name="rahasia_dib">
+    <style name="welcome_message">
         <item name="android:textSize">
-            16sp
+            20sp
         </item>
 
         <item name="android:textColor">
