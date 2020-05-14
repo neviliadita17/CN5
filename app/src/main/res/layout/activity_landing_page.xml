@@ -16,8 +16,8 @@
 
         <View
             android:id="@+id/rectangle_1"
-            android:layout_width="562dp"
-            android:layout_height="887dp"
+            android:layout_width="411dp"
+            android:layout_height="828dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_marginStart="-1dp"
@@ -368,35 +368,6 @@
             android:textStyle="bold"
             />
 
-
-        <!-- Group 2 -->
-        <View
-            android:id="@+id/group_2"
-            android:layout_width="125dp"
-            android:layout_height="40dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="143dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="236dp"
-            android:background="#00000000"
-            />
-
-        <!-- Rectangle 9 -->
-        <Button
-            android:id="@+id/rectangle_9"
-            android:layout_width="125dp"
-            android:layout_height="40dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="143dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="236dp"
-            android:background="@drawable/rectangle_9"
-            android:text="@string/baca_lebih"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:onClick="bacalebih"
-            />
-
         <!-- Group 1 -->
         <View
             android:id="@+id/group_1"
@@ -421,7 +392,7 @@
             android:background="@drawable/thunderbolt"
             />
 
-        <!-- TRENDING -->
+        <!-- WELCOME -->
         <TextView
             android:id="@+id/trending"
             android:layout_width="66dp"
@@ -430,9 +401,9 @@
             android:layout_marginLeft="183dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="142dp"
-            android:text="@string/trending"
+            android:text="@string/welcome"
             android:textStyle="bold"
-            android:textAppearance="@style/trending"
+            android:textAppearance="@style/welcome"
             android:gravity="top"
             />
 
@@ -453,19 +424,18 @@
             />
 
 
-        <!-- Rahasia Dibalik “Desain” CyberTruck Milik Tesla -->
+        <!-- WELCOME MESSAGE -->
         <TextView
             android:id="@+id/rahasia_dib"
-            android:layout_width="292dp"
-            android:layout_height="52dp"
+            android:layout_width="293dp"
+            android:layout_height="84dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="60dp"
             android:layout_alignParentTop="true"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="174dp"
-            android:text="@string/rahasia_dib"
-            android:textAppearance="@style/rahasia_dib"
             android:gravity="center_horizontal|top"
-            />
+            android:text="@string/welcome_message"
+            android:textAppearance="@style/welcome_message" />
 
         <!-- BERITA POPULER -->
         <TextView
@@ -535,8 +505,8 @@
         <!-- account -->
         <Button
             android:id="@+id/account"
-            android:layout_width="20dp"
-            android:layout_height="24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="347dp"
@@ -549,23 +519,23 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="139dp"
+            android:layout_marginLeft="190dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="785dp"
             android:background="@drawable/search"
             />
 
-        <!-- star (1) -->
-        <View
-            android:id="@+id/star_1"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="242dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="785dp"
-            android:background="@drawable/star"
-            />
+<!--        &lt;!&ndash; star (1) &ndash;&gt;-->
+<!--        <View-->
+<!--            android:id="@+id/star_1"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_marginLeft="242dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginTop="785dp"-->
+<!--            android:background="@drawable/star"-->
+<!--            />-->
 
         <!-- Group 5 -->
         <View
