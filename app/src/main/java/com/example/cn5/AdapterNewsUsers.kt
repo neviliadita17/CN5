@@ -6,10 +6,7 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import androidx.core.content.ContextCompat.startActivity
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_news_list.*
@@ -36,12 +33,20 @@ class AdapterNewsUsers(val mCtx: Context, val layoutResId: Int, val list: List<N
             .error(R.color.colorPrimary)
             .into(image)
 
-        return view
 
         Read.setOnClickListener {
-            val webIntent: Intent = Uri.parse("https://www.android.com").let { webpage ->
-                Intent(Intent.ACTION_VIEW, webpage)
-            }
+            openWeb(news)
+        }
+        return view
+
+
+        }
+    private fun openWeb(news: News) {
+
+        Toast.makeText(mCtx,"Opening Browser!!", Toast.LENGTH_SHORT).show()
+        val openURL = Intent(android.content.Intent.ACTION_VIEW)
+        openURL.data = Uri.parse(news.link)
+        context.startActivity(openURL)
         }
     }
-}
+
