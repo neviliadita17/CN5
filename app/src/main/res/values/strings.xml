@@ -9,8 +9,8 @@
         <item>Hiburan</item>
         <item>Teknologi</item>
     </string-array>
-    <string name="trending">TRENDING</string>
-    <string name="rahasia_dib">Rahasia Dibalik Sebuah Desain CyberTruck Milik Tesla</string>
+    <string name="welcome">WELCOME</string>
+    <string name="welcome_message">Selamat Datang di CN-News, Aplikasi Portal Berita Kesayangan Anda</string>
     <string name="baca_lebih">BACA LEBIH</string>
     <string name="rabu_5_febr">RABU, 5 FEBRUARI 2020</string>
     <string name="nw_news">NW NEWS</string>
